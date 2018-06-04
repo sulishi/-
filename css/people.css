@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 1263px;
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+    width: 133px;
+    background: url('../image/logo.png') no-repeat;
+    margin-top: 20px;
+    float: left;
+}
+
+.city {
+    display: none;
+}
+
+@media (min-width: 1263px) {
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}

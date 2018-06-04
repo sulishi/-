@@ -18,6 +18,10 @@ header {
     background-color: #fff;
 }
 
+.nowidth {
+    width: 1263px;
+}
+
 .logo {
     height: 60px;
     width: 133px;
@@ -278,4 +282,13 @@ footer p span a {
 
 footer p span a:hover {
     border-bottom: 1px solid #f34d41;
+}
+
+@media (min-width: 1263px) {
+    header {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
 }

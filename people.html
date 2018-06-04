@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/people.css">
+    <title>个人中心</title>
+</head>
+
+<body>
+
+</body>
+<header>
+    <div class="w">
+        <div class="logo"></div>
+        <div class="location">
+            <ul>
+                <li>西安
+                    <ul class="city">
+                        <span>定位城市:<i>西安</i></span>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div style="height: 80px;"></div>
+<div class="main">
+    <div class="mainbox">
+        <div class="tab">
+            <p>个人中心</p>
+            <ul id="need">
+                <li class="active">我的订单</li>
+                <li>基本信息</li>
+            </ul>
+        </div>
+        <div class="show">
+            <div class="order player">
+                <p>我的订单</p>
+
+            </div>
+            <div class="setting player">
+                <p>基本信息</p>
+                <div class="imp">
+                    <div class="prolife">
+                        <img src="./image/573af6c7add4bb14b6e74cd2515f3d88224494.jpg" alt="">
+                        <button>更换头像</button>
+                        <span>支持JPG,JPEG,PNG格式，且文件需要小于1M</span>
+                    </div>
+                    <form action="">
+                        <span>昵称:</span>
+                        <input type="text" name="昵称" id=""><br>
+                        <span>性别:</span>
+                        <input type="radio" name="性别" id="radio1"><label for="radio1">男</label>
+                        <input type="radio" name="性别" id="radio2"><label for="radio2">女</label>
+                        <br>
+                        <span>生日:</span>
+                        <select name="" id="">
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                        </select>
+                        <span>年</span>
+                        <select name="月" id="">
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                        </select>
+                        <span>月</span>
+                        <select name="月" id="">
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                        </select>
+                        <span>日</span>
+                        <br>
+                        <span>生活状态:</span>
+                        <input type="radio" name="状态" id="marry1"><label for="marry1">单身</label>
+                        <input type="radio" name="状态" id="marry2"><label for="marry2">热恋中</label>
+                        <input type="radio" name="状态" id="marry3"><label for="marry3">已婚</label>
+                        <input type="radio" name="状态" id="marry4"><label for="marry4">为人父母</label>
+                        <br>
+                        <span>从事行业</span>
+                        <select name="事业" id="">
+                            <option value=""></option>
+                        </select>
+                        <select name="丛属事业" id="">
+                                <option value=""></option>
+                        </select>
+                        <br>
+                        <span>兴趣</span>
+                        <input type="checkbox" name="美食" id="chos1"><label for="chos1">美食</label>
+                        <input type="checkbox" name="chose" id="chos2"><label for="chos2">动漫</label>
+                        <input type="checkbox" name="chose" id="chos3"><label for="chos3">摄影</label>
+                        <input type="checkbox" name="chose" id="chos4"><label for="chos4">电影</label>
+                        <input type="checkbox" name="chose" id="chos5"><label for="chos5">体育</label>
+                        <input type="checkbox" name="chose" id="chos6"><label for="chos6">财经</label>
+                        <input type="checkbox" name="chose" id="chos7"><label for="chos7">音乐</label>
+                        <input type="checkbox" name="chose" id="chos8"><label for="chos8">游戏</label>
+                        <input type="checkbox" name="chose" id="chos9"><label for="chos9">科技</label>
+                        <input type="checkbox" name="chose" id="chos10"><label for="chos10">旅游</label>
+                        <input type="checkbox" name="chose" id="chos11"><label for="chos11">文学</label>
+                        <input type="checkbox" name="chose" id="chos12"><label for="chos12">公益</label>
+                        <input type="checkbox" name="chose" id="chos13"><label for="chos13">汽车</label>
+                        <input type="checkbox" name="chose" id="chos14"><label for="chos14">时尚</label>
+                        <input type="checkbox" name="chose" id="chos15"><label for="chos15">宠物</label>
+                        <br>
+                        <span>个性签名:</span>
+                        <input type="text" name="" id="">
+                        <button>保存</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>
+        <span> 违法和不良信息举报电话: 4006018900 举报邮箱: jubao.maoyan@maoyan.com</span>
+
+        <span>友情链接 : <a href="#">美团网</a><i>|</i> <a href="#">美团下载</a></span>
+
+        <span>©2016 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489号-1 京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</span>
+
+        <span>北京猫眼文化传媒有限公司</span></p>
+</footer>
+<script>
+    var oNeed = document.getElementById('need').getElementsByTagName('li');
+    var oPlay = document.getElementsByClassName('show')[0].getElementsByClassName('player');
+    for (var i = 0; i < oNeed.length; i++) {
+        oNeed[i].index = i;
+        oNeed[i].onclick = function() {
+            for (var n = 0; n < oNeed.length; n++) {
+                oNeed[n].className = '';
+                this.className = 'active';
+            }
+            for (var n = 0; n < oPlay.length; n++) {
+                oPlay[n].style.display = 'none';
+                oPlay[this.index].style.display = 'block';
+            }
+        }
+
+    }
+</script>
+
+</html>
