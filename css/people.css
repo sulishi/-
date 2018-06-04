@@ -29,7 +29,166 @@ header {
     display: none;
 }
 
-@media (min-width: 1263px) {
+.main {
+    width: 100%;
+}
+
+.mainbox {
+    width: 1164px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 100%;
+    min-height: 900px;
+}
+
+.tab {
+    width: 201px;
+    background-color: #f4f3f4;
+    border: 1px solid #e1e1e1;
+    border-right: 0px;
+    text-align: center;
+    min-height: 900px;
+    float: left;
+}
+
+.tab p {
+    font-size: 24px;
+    margin: 40px 0;
+}
+
+.tab li {
+    list-style: none;
+    font-size: 18px;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ed3931;
+    color: #fff;
+}
+
+.show {
+    min-height: 900px;
+    display: inline-block;
+    width: 952px;
+    border: 1px solid #e1e1e1;
+    height: 300px;
+}
+
+.setting {
+    display: none;
+}
+
+.show p {
+    font-size: 18px;
+    color: #ed3931;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.setting p {
+    font-size: 18px;
+    color: #ed3931;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.imp {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.prolife {
+    width: 270px;
+    margin: 20px 10px;
+    float: left;
+}
+
+.prolife img {
+    width: 270px;
+    height: 270px;
+}
+
+.prolife button {
+    display: block;
+    border: 0px;
+    font-size: 18px;
+    color: #5b5b5b;
+    background-color: #e6e6e6;
+    width: 160px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.prolife span {
+    display: block;
+    color: #999;
+    margin: 20px 0;
+}
+
+form {
+    width: 495px;
+    margin-left: 20px;
+    padding-left: 50px;
+    float: left;
+    margin-top: 20px;
+}
+
+form input {}
+
+form button {
+    display: block;
+    background-color: #ed3931;
+    color: #fff;
+    border: 0px;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+}
+
+footer {
+    width: 1263px;
+    height: 180px;
+    background-color: rgb(51, 49, 49);
+    margin-top: 80px;
+}
+
+footer p {
+    padding-top: 50px;
+    font-size: 14px;
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    color: #999;
+}
+
+footer p span {
+    display: block;
+    text-align: center;
+    margin: 2px;
+}
+
+footer p span a {
+    text-decoration: none;
+    color: #f34d41;
+}
+
+footer p span a:hover {
+    border-bottom: 1px solid #f34d41;
+}
+
+@media (min-width: 1281px) {
     header {
         width: 100%;
     }
